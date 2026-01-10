@@ -2,3 +2,44 @@
 [2026-01-08 11:28:41,589: INFO: tempzqebpbyt: WELcome]
 [2026-01-08 11:29:55,114: INFO: main: WELcome]
 [2026-01-09 09:57:07,278: INFO: main: WELcome]
+[2026-01-10 12:25:49,644: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-10 12:25:49,644: ERROR: main: [Errno 2] No such file or directory: 'd:\\world of ml\\kidney_disease_classification\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\world of ml\Kidney_Disease_Classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\world of ml\kidney_disease_classification\src\cnnClassifier\config\configuration.py", line 17, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\world of ml\kidney_disease_classification\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "d:\world of ml\kidney_disease_classification\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'd:\\world of ml\\kidney_disease_classification\\src\\config\\config.yaml'
+[2026-01-10 12:29:52,117: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-10 12:29:52,122: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-10 12:29:52,128: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-10 12:29:52,138: INFO: common: created directory at: artifacts]
+[2026-01-10 12:29:52,140: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-10 12:29:52,142: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-10 12:30:09,576: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-10 12:30:13,731: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-10 12:30:13,740: INFO: main: *******************]
+[2026-01-10 12:30:13,745: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-10 12:30:13,751: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-10 12:30:13,760: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-10 12:30:13,766: INFO: common: created directory at: artifacts]
+[2026-01-10 12:30:13,771: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-10 12:30:25,127: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-10 12:30:25,973: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-10 12:30:26,238: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
