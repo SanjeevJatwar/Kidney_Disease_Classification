@@ -4,12 +4,12 @@ from src.cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseMo
 
 STAGE_NAME = "Data Ingestion stage"
 try:
-    logger.info(f">>>>>> stage{STAGE_NAME} started >>")
-    data.ingestion = DataIngestionTrainingPipeline()
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    data_ingestion = DataIngestionTrainingPipeline()
     data_ingestion.main()
-    logger.info(f"?? completed??")
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
-    logger.enception(e)
+    logger.exception(e)
     raise e
 
 
