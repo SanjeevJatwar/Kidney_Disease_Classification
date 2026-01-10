@@ -20,5 +20,5 @@ setuptools.setup(
     long_description=long_description,
     long_description_content= "text/markdown",
     url = f"https://github.com/{Author_name}/{Repo_name}",
-    package_dir={".":"src"},
+    package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"))
