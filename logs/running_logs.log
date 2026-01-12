@@ -249,3 +249,116 @@ x==========x]
 [2026-01-12 14:17:51,782: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
 [2026-01-12 14:17:51,794: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
 [2026-01-12 14:17:51,796: INFO: common: created directory at: artifacts]
+[2026-01-12 15:30:01,599: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-12 15:30:01,601: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:30:01,603: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:30:01,604: INFO: common: created directory at: artifacts]
+[2026-01-12 15:30:01,604: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-12 15:30:01,605: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 15:30:19,328: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 15:30:21,536: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-12 15:30:21,539: INFO: main: *******************]
+[2026-01-12 15:30:21,541: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-12 15:30:21,544: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:30:21,550: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:30:21,553: INFO: common: created directory at: artifacts]
+[2026-01-12 15:30:21,554: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-12 15:30:22,486: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-12 15:30:22,813: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-12 15:30:22,813: INFO: main: *******************]
+[2026-01-12 15:30:22,814: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-12 15:30:22,815: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:30:22,817: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:30:22,817: INFO: common: created directory at: artifacts]
+[2026-01-12 15:30:22,818: INFO: common: created directory at: artifacts\training]
+[2026-01-12 15:35:52,911: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-12 15:43:12,925: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-12 15:43:12,937: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:43:12,946: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:43:12,951: INFO: common: created directory at: artifacts]
+[2026-01-12 15:43:12,959: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-12 15:43:12,973: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 15:43:33,447: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 15:43:37,026: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-12 15:43:37,070: INFO: main: *******************]
+[2026-01-12 15:43:37,150: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-12 15:43:37,171: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:43:37,295: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:43:37,371: INFO: common: created directory at: artifacts]
+[2026-01-12 15:43:37,455: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-12 15:43:39,107: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-12 15:43:39,684: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-12 15:43:39,684: INFO: main: *******************]
+[2026-01-12 15:43:39,685: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-12 15:43:39,689: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:43:39,692: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:43:39,693: INFO: common: created directory at: artifacts]
+[2026-01-12 15:43:39,694: INFO: common: created directory at: artifacts\training]
+[2026-01-12 15:43:39,695: INFO: model_training: MLflow tracking URI set to: https://dagshub.com/sanjeevjatwar/kidney-mlflow.mlflow]
+[2026-01-12 15:43:42,354: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 404 != 200. Response body: '']
+Traceback (most recent call last):
+  File "D:\world of ml\Kidney_Disease_Classification\main.py", line 33, in <module>
+    model_trainer.main()
+  File "D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "d:\world of ml\kidney_disease_classification\src\cnnClassifier\components\model_training.py", line 98, in train
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\mlflow\utils\rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 404 != 200. Response body: ''
+[2026-01-12 15:46:47,408: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-12 15:46:47,410: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:46:47,412: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:46:47,413: INFO: common: created directory at: artifacts]
+[2026-01-12 15:46:47,413: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-12 15:46:47,414: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 15:47:04,705: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 15:47:06,221: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-12 15:47:06,227: INFO: main: *******************]
+[2026-01-12 15:47:06,228: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-12 15:47:06,232: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:47:06,235: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:47:06,236: INFO: common: created directory at: artifacts]
+[2026-01-12 15:47:06,237: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-12 15:47:07,511: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-12 15:47:08,437: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-12 15:47:08,438: INFO: main: *******************]
+[2026-01-12 15:47:08,439: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-12 15:47:08,443: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 15:47:08,446: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 15:47:08,447: INFO: common: created directory at: artifacts]
+[2026-01-12 15:47:08,449: INFO: common: created directory at: artifacts\training]
+[2026-01-12 15:47:08,450: INFO: model_training: MLflow tracking URI set to: https://dagshub.com/SanjeevJatwar/Kidney_Disease_Classification.mlflow]

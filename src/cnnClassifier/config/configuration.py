@@ -6,6 +6,10 @@ from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareBaseModelConfig,
                                                 TrainingConfig,
                                                 EvaluationConfig)
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 class ConfigurationManager:
@@ -85,7 +89,7 @@ class ConfigurationManager:
         eval_config = EvaluationConfig(
             path_of_model=Path("artifacts/training/model.h5"),
             training_data=Path("artifacts/data_ingestion/data"),
-            mlflow_uri="https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow",
+            mlflow_uri=os.getenv("MLFLOW_TRACKING_URI", "https://dagshub.com/sanjeevjatwar/kidney-mlflow.mlflow"),
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE

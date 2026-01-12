@@ -12,3 +12,4 @@ joblib
 types-PyYAML
 scipy
 Flask
+python-dotenv
