@@ -157,3 +157,95 @@ NameError: name 'ModelTrainingPipeline' is not defined
 [2026-01-11 18:56:14,587: INFO: common: created directory at: artifacts]
 [2026-01-11 18:56:14,589: INFO: common: created directory at: artifacts\training]
 [2026-01-11 18:56:15,058: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-11 18:59:00,873: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-11 18:59:00,890: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-11 18:59:00,900: INFO: common: created directory at: artifacts]
+[2026-01-11 18:59:00,908: INFO: common: created directory at: artifacts\training]
+[2026-01-11 18:59:01,747: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-11 19:00:19,878: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-11 19:00:19,883: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-11 19:00:19,885: INFO: common: created directory at: artifacts]
+[2026-01-11 19:00:19,887: INFO: common: created directory at: artifacts\training]
+[2026-01-11 19:00:20,159: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-11 19:00:55,339: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-11 19:00:55,346: INFO: common: yaml file: d:\world of ml\kidney_disease_classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-11 19:00:55,348: INFO: common: created directory at: artifacts]
+[2026-01-11 19:00:55,350: INFO: common: created directory at: artifacts\training]
+[2026-01-11 19:00:55,822: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-12 12:52:49,448: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-12 12:52:49,462: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 12:52:49,474: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 12:52:49,475: INFO: common: created directory at: artifacts]
+[2026-01-12 12:52:49,475: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-12 12:52:49,476: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 12:53:10,624: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 12:53:12,596: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-12 12:53:12,597: INFO: main: *******************]
+[2026-01-12 12:53:12,597: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-12 12:53:12,600: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 12:53:12,602: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 12:53:12,603: INFO: common: created directory at: artifacts]
+[2026-01-12 12:53:12,604: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-12 12:53:13,684: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-12 12:53:14,034: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-12 12:53:14,035: INFO: main: *******************]
+[2026-01-12 12:53:14,035: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-12 12:53:14,039: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 12:53:14,044: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 12:53:14,048: INFO: common: created directory at: artifacts]
+[2026-01-12 12:53:14,048: INFO: common: created directory at: artifacts\training]
+[2026-01-12 12:53:14,634: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image']
+Traceback (most recent call last):
+  File "D:\world of ml\Kidney_Disease_Classification\main.py", line 33, in <module>
+    model_trainer.main()
+  File "D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\pipeline\stage_03_model_training.py", line 20, in main
+    training.train_valid_generator()
+  File "D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\components\model_training.py", line 34, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image'
+[2026-01-12 12:54:42,025: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-12 12:54:42,027: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 12:54:42,029: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 12:54:42,030: INFO: common: created directory at: artifacts]
+[2026-01-12 12:54:42,030: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-12 12:54:42,030: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 12:55:20,595: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1c8gaS5AoP9Rl5aB5RRC0f0tKyzbv6zzY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-12 12:55:22,146: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-12 12:55:22,148: INFO: main: *******************]
+[2026-01-12 12:55:22,148: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-12 12:55:22,152: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 12:55:22,154: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 12:55:22,155: INFO: common: created directory at: artifacts]
+[2026-01-12 12:55:22,155: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-12 12:55:22,754: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-12 12:55:23,085: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-12 12:55:23,085: INFO: main: *******************]
+[2026-01-12 12:55:23,086: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-12 12:55:23,087: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 12:55:23,090: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 12:55:23,091: INFO: common: created directory at: artifacts]
+[2026-01-12 12:55:23,093: INFO: common: created directory at: artifacts\training]
+[2026-01-12 13:21:01,256: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-12 14:16:26,511: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 14:16:26,513: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 14:16:26,514: INFO: common: created directory at: artifacts]
+[2026-01-12 14:17:51,782: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\config\config.yaml loaded successfully]
+[2026-01-12 14:17:51,794: INFO: common: yaml file: D:\world of ml\Kidney_Disease_Classification\src\cnnClassifier\constants\..\..\..\params.yaml loaded successfully]
+[2026-01-12 14:17:51,796: INFO: common: created directory at: artifacts]
