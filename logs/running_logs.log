@@ -454,3 +454,45 @@ x==========x]
 [2026-01-13 11:48:09,984: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2026-01-16 19:17:46,698: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2026-01-16 19:17:46,701: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-16 19:18:12,704: INFO: _internal: 127.0.0.1 - - [16/Jan/2026 19:18:12] "GET / HTTP/1.1" 200 -]
+[2026-01-16 19:18:16,474: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\world of ml\ml_env\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\Kidney_Disease_Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\world of ml\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 19, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\keras\utils\image_utils.py", line 423, in load_img
+    img = pil_image.open(io.BytesIO(f.read()))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\world of ml\ml_env\Lib\site-packages\PIL\Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x000001C8F306C4A0>
+[2026-01-16 19:18:16,520: INFO: _internal: 127.0.0.1 - - [16/Jan/2026 19:18:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-01-16 19:18:52,266: INFO: _internal: 127.0.0.1 - - [16/Jan/2026 19:18:52] "GET / HTTP/1.1" 200 -]
+[2026-01-16 19:19:07,898: INFO: _internal: 127.0.0.1 - - [16/Jan/2026 19:19:07] "POST /predict HTTP/1.1" 200 -]
+[2026-01-16 19:19:43,746: INFO: _internal: 127.0.0.1 - - [16/Jan/2026 19:19:43] "POST /predict HTTP/1.1" 200 -]
