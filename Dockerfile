@@ -19,6 +19,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
+# Install the cnnClassifier package
+RUN pip install -e .
+
 # Create necessary directories for artifacts
 RUN mkdir -p artifacts/data_ingestion \
     artifacts/prepare_base_model \
