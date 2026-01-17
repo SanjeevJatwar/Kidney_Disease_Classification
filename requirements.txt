@@ -13,3 +13,4 @@ types-PyYAML
 scipy
 Flask
 python-dotenv
+flask-cors
