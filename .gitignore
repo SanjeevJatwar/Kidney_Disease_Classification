@@ -43,5 +43,8 @@ mlruns/
 *.bak
 inputImage.jpg
 
+# Training data (too large for GitHub)
+artifacts/data_ingestion/data/
+
 # Docker
 docker-compose.override.yml
