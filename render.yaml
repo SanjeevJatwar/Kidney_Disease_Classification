@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: kidney-disease-classifier
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    region: singapore
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_APP
+        value: app.py
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: PYTHONUNBUFFERED
+        value: 1
