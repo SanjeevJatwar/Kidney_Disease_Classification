@@ -20,9 +20,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code and configuration
 COPY src/ ./src/
 COPY config/ ./config/
-COPY artifacts/ ./artifacts/
 COPY templates/ ./templates/
 COPY app.py .
+
+# Create artifacts directory structure (model will be uploaded separately)
+RUN mkdir -p artifacts/training
 
 # Expose port 7860 (HF Spaces standard)
 EXPOSE 7860
