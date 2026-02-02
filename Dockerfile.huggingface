@@ -1,0 +1,35 @@
+# Dockerfile for Hugging Face Spaces (Docker SDK)
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for caching
+COPY requirements.txt .
+COPY setup.py .
+COPY README.md .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy source code and configuration
+COPY src/ ./src/
+COPY config/ ./config/
+COPY artifacts/ ./artifacts/
+COPY templates/ ./templates/
+COPY app.py .
+
+# Expose port 7860 (HF Spaces standard)
+EXPOSE 7860
+
+# Set environment variables for HF Spaces
+ENV FLASK_APP=app.py
+ENV PORT=7860
+
+# Run Flask app on 0.0.0.0:7860
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=7860"]

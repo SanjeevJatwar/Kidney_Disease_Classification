@@ -133,5 +133,3 @@ if __name__ == "__main__":
         logger.critical(f"Failed to start application: {str(e)}")
         raise
 
-    app.run(host='0.0.0.0', port=8080) #for AWS
-
